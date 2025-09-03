@@ -42,7 +42,7 @@ export default function LoginPage() {
 
           setTimeout(() => {
             router.push("/undangan");
-            Swal.close(); 
+            Swal.close();
           }, 1500);
         });
       }
@@ -88,12 +88,19 @@ export default function LoginPage() {
       {/* Card Login */}
       <div className="relative z-30 flex items-center justify-center min-h-screen p-6">
         <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-md w-full max-w-md">
-          <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
+          <h2 className="text-2xl font-bold text-center mb-2">Login</h2>
+          <p className="text-center text-gray-600 mb-6 text-sm">
+            {/* Selamat datang kembali di <span className="font-semibold text-pink-500">Indoinvite!</span>
+            <br /> */}
+            Yuk masuk dan lanjutkan perjalanan undanganmu 💌
+          </p>
+
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               suppressHydrationWarning
               type="email"
               placeholder="Email"
+              required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -102,6 +109,7 @@ export default function LoginPage() {
               suppressHydrationWarning
               type="password"
               placeholder="Password"
+              required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
               value={password}
               onChange={(e) => setPassword(e.target.value)}

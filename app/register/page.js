@@ -75,12 +75,17 @@ export default function RegisterPage() {
       {/* Card Register */}
       <div className="relative z-30 flex items-center justify-center min-h-screen p-6">
         <div className="bg-white/80 backdrop-blur-md p-8 rounded-xl shadow-md w-full max-w-md mx-4">
-          <h2 className="text-2xl font-bold text-center mb-6">Register</h2>
+          <h2 className="text-2xl font-bold text-center mb-2">Register</h2>
+          <p className="text-center text-gray-600 mb-6 text-sm">
+            Buat akun baru dan mulai ciptakan undangan digitalmu bersama <span className="font-semibold text-pink-500">Indoinvite</span> ✨
+          </p>
+
           <form onSubmit={handleSubmit} className="space-y-4">
             <input
               suppressHydrationWarning
               type="text"
               placeholder="Name"
+              required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -89,6 +94,7 @@ export default function RegisterPage() {
               suppressHydrationWarning
               type="email"
               placeholder="Email"
+              required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -97,6 +103,7 @@ export default function RegisterPage() {
               suppressHydrationWarning
               type="password"
               placeholder="Password"
+              required
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
