@@ -3,8 +3,15 @@
 import { motion } from "framer-motion"
 
 export default function EventPage() {
-    const handleMapClick = () => {
-        window.open("https://maps.google.com/?q=Rumah+Justin+Jakarta", "_blank")
+    const handleMapClickResepsi = () => {
+        window.open("https://maps.app.goo.gl/9iy4nimquCinLwHa6", "_blank")
+    }
+
+    const handleMapClickAkad = () => {
+        window.open("https://maps.app.goo.gl/koZPhra7hH8Y2MS26", "_blank")
+    }
+    const handleMapClickMakan = () => {
+        window.open("https://maps.app.goo.gl/WSm6JrqdNUqnjLuS8", "_blank")
     }
 
     const fadeSlideUp = {
@@ -93,7 +100,7 @@ export default function EventPage() {
 
                                     <div>
                                         <button
-                                            onClick={handleMapClick}
+                                            onClick={handleMapClickResepsi}
                                             className="bg-amber-900 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-xs font-medium transition-colors duration-200 inline-flex items-center gap-2 ml-auto"
                                         >
                                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -159,12 +166,12 @@ export default function EventPage() {
                                                 />
                                             </svg>
                                         </div>
-                                        <p className="text-sm text-gray-700 text-left">Jalan gunung batur, no 78, Denpasar, Bali</p>
+                                        <p className="text-sm text-gray-700 text-left">Jalan gunung batur, no 78,<br /> Denpasar, Bali</p>
                                     </div>
 
                                     <div>
                                         <button
-                                            onClick={handleMapClick}
+                                            onClick={handleMapClickAkad}
                                             className="bg-amber-900 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-xs font-medium transition-colors duration-200 inline-flex items-center gap-2 ml-auto"
                                         >
                                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -235,7 +242,7 @@ export default function EventPage() {
 
                                     <div>
                                         <button
-                                            onClick={handleMapClick}
+                                            onClick={handleMapClickMakan}
                                             className="bg-amber-900 hover:bg-amber-800 text-white px-6 py-3 rounded-full text-xs font-medium transition-colors duration-200 inline-flex items-center gap-2 ml-auto"
                                         >
                                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

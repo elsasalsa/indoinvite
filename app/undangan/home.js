@@ -60,7 +60,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-[#e6f0fa]">
+    <div className="min-h-screen relative overflow-hidden bg-[#e6f0fa] w-full max-w-[420px] mx-auto">
       <section className="min-h-screen flex items-center justify-center relative">
         <div
           className="absolute inset-0"
