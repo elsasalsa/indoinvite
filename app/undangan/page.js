@@ -1,25 +1,19 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import Sampul from "./sampul"
-import Invitation from "./invitation"
+import { useState } from "react";
+import CoverPage from "./cover";
+import HomePage from "./home";
 
 export default function UndanganPage() {
-  const [userName, setUserName] = useState("")
-  const [isOpen, setIsOpen] = useState(false)
-
-  useEffect(() => {
-    const storedName = localStorage.getItem("userName")
-    if (storedName) setUserName(storedName)
-  }, [])
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       {!isOpen ? (
-        <Sampul userName={userName} onOpen={() => setIsOpen(true)} />
+        <CoverPage onOpen={() => setIsOpen(true)} />
       ) : (
-        <Invitation userName={userName} />
+        <HomePage />
       )}
     </>
-  )
+  );
 }

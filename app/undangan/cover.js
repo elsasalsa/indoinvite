@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-export default function Sampul({ userName, onOpen }) {
+export default function CoverPage({ onOpen }) {
   return (
     <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-rose-50">
       {/* Background Trees */}
@@ -33,7 +33,7 @@ export default function Sampul({ userName, onOpen }) {
             Untuk Hadir Di Acara Kami.
           </p>
           <p className="text-gray-600">Kepada :</p>
-          <p className="font-semibold text-lg mb-6">{userName || "Tamu Undangan"}</p>
+          <p className="font-semibold text-lg mb-6">Bapak Budi</p>
           <button
             onClick={onOpen}
             className="bg-[#5c4033] text-white px-6 py-2 rounded-lg flex items-center gap-2 mx-auto hover:bg-[#4b3328] transition"
@@ -43,5 +43,5 @@ export default function Sampul({ userName, onOpen }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
