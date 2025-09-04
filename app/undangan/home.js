@@ -126,6 +126,22 @@ export default function HomePage() {
           />
         </div>
 
+        <div className="absolute top-48 left-8 w-16 h-16 opacity-1 animate-float-right">
+          <img
+            src="/asset-image/bird.webp"
+            alt=""
+            className="w-full h-full object-contain"
+          />
+        </div>
+
+        <div className="absolute top-20 right-10 w-16 h-16 opacity-1 animate-float-right">
+          <img
+            src="/asset-image/bird.webp"
+            alt=""
+            className="w-full h-full object-contain transform -scale-x-100"
+          />
+        </div>
+        
         {/* Bottom left tree decoration */}
         <div className="absolute bottom-0 -left-32 w-64 h-72 opacity-1">
           <img src="/asset-image/tree-3.webp"

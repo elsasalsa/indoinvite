@@ -24,6 +24,10 @@ module.exports = {
           "75%": { transform: "rotate(-4deg) translate(-10px, 6px)" },
           "100%": { transform: "rotate(0deg) translateX(0)" },
         },
+        floatX: {
+          "0%, 100%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(20px)" }, 
+        },
         shine: {
           "0%": { opacity: "0.2" },
           "50%": { opacity: "1" },
@@ -33,6 +37,7 @@ module.exports = {
       animation: {
         "float-left": "floatLeft 5s linear infinite",
         "float-right": "floatRight 5s linear infinite",
+        "float-x": "floatX 4s ease-in-out infinite",
         "shine": "shine 1.5s ease-in-out infinite",
       },
     },
