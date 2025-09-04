@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎉 IndoInvite - Undangan Pernikahan Interaktif 💖
 
-## Getting Started
+Selamat datang di **IndoInvite**, aplikasi undangan pernikahan interaktif berbasis **Next.js** + **Tailwind CSS**!  
+Buat kamu yang pengen undangan digital yang cantik, interaktif, dan ada animasinya, kamu berada di tempat yang tepat 😎🌸
 
-First, run the development server:
+---
+
+## ✨ Fitur Keren
+
+- 💌 **Kartu Acara Interaktif** – tampil cantik dan rapi di semua layar
+- 🌿 **Animasi Dekorasi** – pohon, daun, dan bunga bergerak dengan **Framer Motion**
+- 📅 **Informasi Lengkap** – tanggal, jam, dan nama acara
+- 📍 **Lokasi Mudah** – tombol langsung ke Google Maps
+- 📱 **Responsif** – mobile friendly dan desktop friendly
+
+---
+
+## 🚀 Instalasi
+
+1. Clone repo ini:
+
+```bash
+git clone https://github.com/elsasalsa/indoinvite.git
+cd indoinvite
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# atau
+yarn install
+```
+
+3. Jalankan development server:
 
 ```bash
 npm run dev
-# or
+# atau
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Environment Variables
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Sebelum menjalankan project, jangan lupa buat file `.env.local` di root folder project.  
+Contohnya:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key_here
+NEXT_PUBLIC_ANALYTICS_ID=your_analytics_id_here
+```
+Buka http://localhost:3000 di browser✨
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Teknologi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+⚡ Next.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎨 Tailwind CSS
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🎬 Framer Motion
