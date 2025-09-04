@@ -1,7 +1,6 @@
 # 🎉 IndoInvite - Undangan Pernikahan Interaktif 💖
 
 Selamat datang di **IndoInvite**, aplikasi undangan pernikahan interaktif berbasis **Next.js** + **Tailwind CSS**!  
-Buat kamu yang pengen undangan digital yang cantik, interaktif, dan ada animasinya, kamu berada di tempat yang tepat🌸
 
 ---
 
